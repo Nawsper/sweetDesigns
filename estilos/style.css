@@ -327,13 +327,9 @@ footer {
   align-items: center;
 }
 
-.contacto__main--section {
-  padding: 20px;
-}
-
 /* media queries */
 
-@media (max-width: 1320px) {
+@media (max-width: 1400px) {
   .galeria__tortas,
   .galeria__cupcakes,
   .galeria__mesas {
@@ -341,7 +337,7 @@ footer {
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1200px) {
   .galeria__tortas,
   .galeria__cupcakes,
   .galeria__mesas {
