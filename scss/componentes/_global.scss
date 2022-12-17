@@ -1,0 +1,36 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  line-height: 1.3;
+}
+
+main {
+  padding: 2%;
+  font-family: fira sans;
+  background-image: linear-gradient(#f6a5d8, #03bee4);
+}
+
+header,
+footer {
+  font-family: kalam;
+}
+
+header {
+  background-color: #f6a5d8;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}

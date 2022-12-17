@@ -1,0 +1,22 @@
+{
+  "name": "sweet-designs",
+  "version": "1.0.0",
+  "description": "Proyecto Desarrollo Coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss scss/main.scss css/estilos.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nawsper/sweetDesigns.git"
+  },
+  "author": "Yasmin Lara Burrut",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nawsper/sweetDesigns/issues"
+  },
+  "homepage": "https://github.com/Nawsper/sweetDesigns#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

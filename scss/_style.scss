@@ -1,0 +1,257 @@
+/* main */
+
+main p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+/* footer */
+
+footer {
+  background-color: #03bee4;
+}
+
+.footer__h4 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.footer__link {
+  color: white;
+  font-size: 1.8rem;
+}
+
+.footer__link:hover {
+  opacity: 0.65;
+}
+
+.footer__p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/*index presentación */
+
+.index__image {
+  padding: 1%;
+  max-width: 50%;
+  border: 1px dotted #000000;
+}
+
+.index__h4 {
+  font-size: 4rem;
+  padding: 5px;
+}
+
+.index__p {
+  padding: 5px;
+}
+
+.index__contenido--tortas,
+.index__contenido--tematicas {
+  padding: 10px;
+  animation: intro 20s infinite;
+}
+
+.index__contenido--mesas {
+  padding: 10px;
+  animation: intro-reverse 20s infinite;
+}
+
+@keyframes intro {
+  0% {
+    transform: translate(20px);
+  }
+  50% {
+    transform: translate(-20px);
+  }
+  100% {
+    transform: translate(20px);
+  }
+}
+
+@keyframes intro-reverse {
+  0% {
+    transform: translate(-20px);
+  }
+  50% {
+    transform: translate(20px);
+  }
+  100% {
+    transform: translate(-20px);
+  }
+}
+
+.index__div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.index__contenido--all {
+  max-width: 700px;
+}
+
+/* nosotros */
+
+.nosotros__h1 {
+  font-size: 4rem;
+  padding: 10px;
+}
+
+.nosotros__p {
+  padding: 10px;
+}
+
+.nosotros__image {
+  padding: 1%;
+  max-width: 50%;
+  border: 1px dotted #000000;
+}
+
+.container__nosotros {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nosotros__contenido--all {
+  padding: 20px;
+  max-width: 700px;
+}
+
+/* galeria */
+
+.galeria__h2 {
+  font-size: 6rem;
+  padding: 2%;
+  animation: titulos 20s infinite;
+}
+
+@keyframes titulos {
+  50% {
+    color: white;
+  }
+}
+
+.galeria__image {
+  width: 250px;
+  height: 350px;
+  border-radius: 5%;
+  transition: 1s;
+}
+
+.galeria__image:hover {
+  transform: scale(1.3);
+}
+
+.galeria__container {
+  overflow: hidden;
+}
+
+.galeria__tortas,
+.galeria__cupcakes,
+.galeria__mesas {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
+  justify-items: center;
+}
+
+/* personalizadas */
+
+.table {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 20px;
+}
+
+.table__porciones {
+  padding: 5px;
+  margin: 10px;
+}
+
+.table__rellenos {
+  padding: 5px;
+  margin: 10px;
+}
+
+.table__image {
+  margin: 20px;
+}
+
+.container__table {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* contacto */
+
+.contacto__h2 {
+  font-size: 4rem;
+  padding: 20px;
+}
+
+.contacto__contacto {
+  font-size: 1.5rem;
+  padding: 10px;
+}
+
+.contacto__main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* media queries */
+
+@media (max-width: 1400px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .container__table {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu__link {
+    padding: 10px;
+  }
+
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .menu__list {
+    flex-direction: column;
+  }
+
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
