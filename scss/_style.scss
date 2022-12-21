@@ -8,7 +8,7 @@ main p {
 /* footer */
 
 footer {
-  background-color: #03bee4;
+  background-color: $bgColor2;
 }
 
 .footer__h4 {
@@ -17,7 +17,7 @@ footer {
 }
 
 .footer__link {
-  color: white;
+  color: $fontLight;
   font-size: 1.8rem;
 }
 
@@ -35,7 +35,7 @@ footer {
 .index__image {
   padding: 1%;
   max-width: 50%;
-  border: 1px dotted #000000;
+  border: 1px dotted $fontDark;
 }
 
 .index__h4 {
@@ -107,7 +107,7 @@ footer {
 .nosotros__image {
   padding: 1%;
   max-width: 50%;
-  border: 1px dotted #000000;
+  border: 1px dotted $fontDark;
 }
 
 .container__nosotros {
@@ -132,7 +132,7 @@ footer {
 
 @keyframes titulos {
   50% {
-    color: white;
+    color: $fontLight;
   }
 }
 

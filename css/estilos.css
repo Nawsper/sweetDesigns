@@ -50,12 +50,12 @@ a {
 .header__h1 {
   font-size: 10rem;
   font-weight: 700;
-  color: white; }
+  color: #ffffff; }
 
 .header__h3 {
   font-size: 5rem;
   font-weight: 400;
-  color: white; }
+  color: #ffffff; }
 
 /* menu navegacion */
 .menu__list {
@@ -108,7 +108,7 @@ footer {
   font-weight: 400; }
 
 .footer__link {
-  color: white;
+  color: #ffffff;
   font-size: 1.8rem; }
 
 .footer__link:hover {
@@ -196,7 +196,7 @@ footer {
 
 @keyframes titulos {
   50% {
-    color: white; } }
+    color: #ffffff; } }
 
 .galeria__image {
   width: 250px;

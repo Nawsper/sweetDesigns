@@ -17,20 +17,20 @@ body {
 
 main {
   padding: 2%;
-  font-family: fira sans;
-  background-image: linear-gradient(#f6a5d8, #03bee4);
+  font-family: $fontGral;
+  background-image: linear-gradient($bgColor1, $bgColor2);
 }
 
 header,
 footer {
-  font-family: kalam;
+  font-family: $fontTittle;
 }
 
 header {
-  background-color: #f6a5d8;
+  background-color: $bgColor1;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: $fontDark;
 }
