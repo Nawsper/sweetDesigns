@@ -19,15 +19,16 @@ main {
   padding: 2%;
   font-family: $fontGral;
   background-image: linear-gradient($bgColor1, $bgColor2);
+
+  & p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
 }
 
 header,
 footer {
-  font-family: $fontTittle;
-}
-
-header {
-  background-color: $bgColor1;
+  font-family: $fontTitle;
 }
 
 a {
