@@ -236,8 +236,8 @@ footer {
   margin: 20px; }
   .table__container {
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: center; }
     .table__container--porciones {
       padding: 5px;
       margin: 10px; }
@@ -246,6 +246,12 @@ footer {
     .table__container--rellenos {
       padding: 5px;
       margin: 10px; }
+
+/* media queries */
+@media (max-width: 1200px) {
+  .table__container {
+    flex-direction: column;
+    align-content: center; } }
 
 /* contacto */
 .contacto__h2 {
@@ -261,9 +267,3 @@ footer {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center; }
-
-/* media queries */
-@media (max-width: 1200px) {
-  .table__container {
-    flex-direction: column;
-    align-content: center; } }

@@ -35,3 +35,15 @@ a {
   text-decoration: none;
   color: $fontDark;
 }
+
+// mixin
+
+@mixin flexbox($jContent, $aItems) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $jContent;
+
+  @if ($aItems == true) {
+    align-items: center;
+  }
+}
