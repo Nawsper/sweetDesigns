@@ -150,6 +150,15 @@ footer {
   100% {
     transform: translate(-20px); } }
 
+/* media queries */
+@media (max-width: 768px) {
+  .menu__list--link {
+    padding: 10px; } }
+
+@media (max-width: 576px) {
+  .menu__list {
+    flex-direction: column; } }
+
 /* nosotros */
 .nosotros {
   display: flex;
@@ -195,6 +204,31 @@ footer {
   50% {
     color: #ffffff; } }
 
+/* media queries */
+@media (max-width: 1400px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(4, 1fr); } }
+
+@media (max-width: 1200px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(3, 1fr); } }
+
+@media (max-width: 768px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(2, 1fr); } }
+
+@media (max-width: 576px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(1, 1fr); } }
+
 /* personalizadas */
 .table {
   font-size: 1.7rem;
@@ -229,33 +263,7 @@ footer {
   align-items: center; }
 
 /* media queries */
-@media (max-width: 1400px) {
-  .galeria__tortas,
-  .galeria__cupcakes,
-  .galeria__mesas {
-    grid-template-columns: repeat(4, 1fr); } }
-
 @media (max-width: 1200px) {
-  .galeria__tortas,
-  .galeria__cupcakes,
-  .galeria__mesas {
-    grid-template-columns: repeat(3, 1fr); }
   .table__container {
     flex-direction: column;
     align-content: center; } }
-
-@media (max-width: 768px) {
-  .menu__list--link {
-    padding: 10px; }
-  .galeria__tortas,
-  .galeria__cupcakes,
-  .galeria__mesas {
-    grid-template-columns: repeat(2, 1fr); } }
-
-@media (max-width: 576px) {
-  .menu__list {
-    flex-direction: column; }
-  .galeria__tortas,
-  .galeria__cupcakes,
-  .galeria__mesas {
-    grid-template-columns: repeat(1, 1fr); } }

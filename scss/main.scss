@@ -6,4 +6,16 @@
 
 @import "componentes/header";
 
-@import "style";
+@import "componentes/footer";
+
+//vistas
+
+@import "./vistas/index";
+
+@import "./vistas/nosotros";
+
+@import "./vistas/galeria";
+
+@import "./vistas/personalizadas";
+
+@import "./vistas/contacto";
