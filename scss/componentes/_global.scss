@@ -1,0 +1,49 @@
+/* General */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  line-height: 1.3;
+}
+
+main {
+  padding: 2%;
+  font-family: $fontGral;
+  background-image: linear-gradient($bgColor1, $bgColor2);
+
+  & p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}
+
+header,
+footer {
+  font-family: $fontTitle;
+}
+
+a {
+  text-decoration: none;
+  color: $fontDark;
+}
+
+// mixin
+
+@mixin flexbox($jContent, $aItems) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $jContent;
+
+  @if ($aItems == true) {
+    align-items: center;
+  }
+}

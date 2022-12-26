@@ -1,0 +1,34 @@
+/* personalizadas */
+
+.table {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 20px;
+
+  &__container {
+    @include flexbox(center, false);
+
+    &--porciones {
+      padding: 5px;
+      margin: 10px;
+    }
+
+    &--image {
+      margin: 20px;
+    }
+
+    &--rellenos {
+      padding: 5px;
+      margin: 10px;
+    }
+  }
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  .table__container {
+    flex-direction: column;
+    align-content: center;
+  }
+}

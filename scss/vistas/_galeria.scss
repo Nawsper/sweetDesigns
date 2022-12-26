@@ -1,0 +1,73 @@
+/* galeria */
+
+.galeria {
+  overflow: hidden;
+
+  &__h2 {
+    font-size: 6rem;
+    padding: 2%;
+    animation: titulos 20s infinite;
+  }
+
+  &__tortas,
+  &__cupcakes,
+  &__mesas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-items: center;
+
+    &--image {
+      width: 250px;
+      height: 350px;
+      border-radius: 5%;
+      transition: 1s;
+
+      &:hover {
+        transform: scale(1.3);
+      }
+    }
+  }
+
+  @keyframes titulos {
+    50% {
+      color: $fontLight;
+    }
+  }
+}
+
+/* media queries */
+
+@media (max-width: 1400px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .galeria__tortas,
+  .galeria__cupcakes,
+  .galeria__mesas {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

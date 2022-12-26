@@ -1,0 +1,84 @@
+/* header */
+
+header {
+  background-color: $bgColor1;
+}
+
+.header__image--full {
+  width: 100%;
+}
+
+.header__image--index {
+  background-image: url("../imagenes/Chocolate-2560x1440.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header__title {
+  padding: 30px;
+
+  &--h1 {
+    font-size: 10rem;
+    font-weight: 700;
+    color: $fontLight;
+  }
+
+  &--h3 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: $fontLight;
+  }
+}
+
+/* menu navegacion */
+
+.menu__sticky {
+  font-family: $fontTitle;
+  position: sticky;
+  top: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: $bgColor1;
+  z-index: 1;
+}
+
+.menu__list {
+  list-style-type: none;
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+
+  &--link {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 30px;
+
+    &:hover {
+      opacity: 0.5;
+      text-decoration: underline;
+    }
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+
+/* icono messenger */
+
+.header__icon {
+  align-self: center;
+  padding-right: 40px;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
